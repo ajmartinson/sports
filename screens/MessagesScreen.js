@@ -1,16 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { useScreens } from 'react-native-screens';
-
-import AppNavigator from './navigation/AppNavigator';
-
-useScreens();
-
-export default function App() {
+export default function MessagesScreen() {
   return (
     <View style={styles.container}>
-      <AppNavigator/>
+      <Text>Messages Screen</Text>
     </View>
   );
 }
@@ -18,6 +12,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
