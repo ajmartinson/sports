@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function MessagesScreen() {
   return (
     <View style={styles.container}>
-      <Text>Messages Screen</Text>
+      <Text style={{ ...styles.text }}>Messages Screen</Text>
     </View>
   );
 }
@@ -16,4 +16,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    fontSize: 36,
+    fontWeight: '300'
+  }
 });

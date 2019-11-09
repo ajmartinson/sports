@@ -2,7 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import FilesScreen from '../screens/FilesScreen';
-import LiftScreen from '../screens/LiftScreen';
+import WorkoutScreen from '../screens/WorkoutScreen';
 import MessagesScreen from '../screens/MessagesScreen';
 import ScheduleScreen from '../screens/ScheduleScreen';
 
@@ -13,7 +13,7 @@ import { Feather } from '@expo/vector-icons';
 
 const tabNavigator = createBottomTabNavigator({
     Schedule: ScheduleScreen,
-    Lifts: LiftScreen,
+    Workouts: WorkoutScreen,
     Messages: MessagesScreen,
     Files: FilesScreen,
   },{
@@ -29,8 +29,8 @@ const tabNavigator = createBottomTabNavigator({
           IconComponent = FontAwesome;
           break;
 
-          case 'Lifts':
-          iconName = 'weight-pound';
+          case 'Workouts':
+          iconName = 'run';
           IconComponent = MaterialCommunityIcons;
           break;
 
