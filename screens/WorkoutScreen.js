@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function WorkoutScreen() {
   return (
     <View style={styles.container}>
-      <Text style={{ ...styles.text }}>Workout Screen</Text>
+      <Text style={{ ...styles.text }}>Workouts Screen</Text>
     </View>
   );
 }

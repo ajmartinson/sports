@@ -10,7 +10,6 @@ import { FontAwesome } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 
-
 const tabNavigator = createBottomTabNavigator({
     Schedule: ScheduleScreen,
     Workouts: WorkoutScreen,
@@ -44,8 +43,6 @@ const tabNavigator = createBottomTabNavigator({
           IconComponent = FontAwesome;
           break;
       }
-
-        // You can return any component that you like here!
         return <IconComponent name={iconName} size={25} color={tintColor}/>;
       },
     }),
